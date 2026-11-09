@@ -48,3 +48,16 @@ Deployed using Docker Compose on Ubuntu Linux.
 
 ## Author
 Devendra
+
+## 🏗️ Project Architecture
+
+```mermaid
+flowchart TD
+    A["AWS EC2 Instance"] --> B["Node Exporter"]
+    C["Jenkins Server"] --> D["Jenkins Metrics"]
+    E["Docker Containers"] --> F["cAdvisor"]
+    B --> G["Prometheus"]
+    D --> G
+    F --> G
+    G --> H["Grafana Dashboard"]
+    H --> I["Email Alerts"]
