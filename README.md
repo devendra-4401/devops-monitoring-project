@@ -61,3 +61,6 @@ flowchart TD
     F --> G
     G --> H["Grafana Dashboard"]
     H --> I["Email Alerts"]
+## 📊 Grafana Dashboard
+
+![Grafana Monitoring Dashboard](grafana-dashboard.png)
